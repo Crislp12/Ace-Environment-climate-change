@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
-
-nav {
+header {
   position:sticky;
   top:0;
+}
+
+nav {
   display:flex;
   justify-content:space-between;
   background-image:url(https://www.sap.com/dam/application/imagelibrary/photos/278000/278132.jpg/_jcr_content/renditions/278132_photo_2480_0676.jpg.adapt.1920_522.false.false.false.false.jpg/1588261069982.jpg);
@@ -40,6 +42,9 @@ main {
     flex-direction:column;
 }
 
+#sectionbox {
+    padding:25px;
+}
 .sect {
     display:flex;
     flex-direction:row;
@@ -74,6 +79,7 @@ footer ol {
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
+    color:red;
 }
 
 @media only screen and (max-width:750px) {
@@ -115,6 +121,16 @@ footer ol {
     }
     #video {
         width:400px;
+        height:200px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .fig1 {
+        width:250px;
+    }
+    #video {
+        width:300px;
         height:200px;
     }
 }
