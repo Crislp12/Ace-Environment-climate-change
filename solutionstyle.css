@@ -135,5 +135,6 @@ footer{
     display: flex;
     justify-content: flex-end;
     font-weight: bolder;
-    background-color:rgb(153,191,55); 
+    background-color:rgb(153,191,55);
+    height:50px;
 }
