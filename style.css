@@ -13,11 +13,13 @@
     box-sizing: border-box;
 }
 
+
+
+
 #section{
     line-height: 1.6;
     font-size: 1.3125rem;
     font-weight: 400;
-    padding: 3rem 0;
    border: 2px solid black;
 }
 
@@ -40,12 +42,13 @@ p{
 
 
 .head{
-    width: 100%;
+   
     background-color: beige;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 30px;
+   margin-top: 0px;
    font-size: 25px;
 }
 
