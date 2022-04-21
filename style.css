@@ -108,19 +108,28 @@ img{
 .footer{
     background-color: #dddddd;
     margin: 0 auto;
+<<<<<<< HEAD
    display: flex;
 justify-content: space-around;
  padding: .5rem 0;
+=======
+>>>>>>> 1dcdd5dd0bd4b8d688aa673af11d881610e43667
    
    
 }
 
+<<<<<<< HEAD
 
 
 form{
     
     font-size: 25px;
     padding: .5rem 0;
+=======
+form{
+    
+    border: 2px solid black;
+>>>>>>> 1dcdd5dd0bd4b8d688aa673af11d881610e43667
   
 }
 
@@ -162,6 +171,7 @@ form{
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -174,6 +184,25 @@ form{
      gap: 1rem;
      margin-bottom: 20px;
     
+=======
+.copyright{
+    
+    border: 2px solid black;
+     width: 30%;
+}
+
+
+
+
+
+
+.terms{
+     display: flex;
+    justify-content: flex-end;
+     gap: 1rem;
+     margin-bottom: 5px;
+     font-size: 30px
+>>>>>>> 1dcdd5dd0bd4b8d688aa673af11d881610e43667
 }
 
 

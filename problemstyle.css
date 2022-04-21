@@ -4,18 +4,30 @@
     box-sizing: border-box;
 }
 
-
-nav {
+header {
   position:sticky;
   top:0;
+  font-size:24px;
+}
+
+nav {
   display:flex;
   justify-content:space-between;
   background-image:url(https://www.sap.com/dam/application/imagelibrary/photos/278000/278132.jpg/_jcr_content/renditions/278132_photo_2480_0676.jpg.adapt.1920_522.false.false.false.false.jpg/1588261069982.jpg);
+  opacity:0.9;
   background-size:auto;
+
 }
 
 h1 {
     margin:50px;
+    font-weight: bolder;
+    color: blue;
+}
+
+h2 {
+    color:red;
+    text-align: center;
 }
 
 .fig1 {
@@ -31,50 +43,91 @@ h1 {
     align-items:center;
     list-style: none;
     padding:25px;
+    font-weight:bolder;
 }
 
-main {
+p {
+    padding:40px 30px;
+}
+
+p:hover{
+    font-size: 24px;
+    font-weight: bolder;
+    
+}
+
+main{
     display:flex;
-    background-image: url(https://wallpapercave.com/wp/wp2354251.jpg);
-    background-size:cover;
     flex-direction:column;
+    background-color: #001219;
+}
+
+#sectionbox {
+    padding:25px;
 }
 
 .sect {
     display:flex;
     flex-direction:row;
     align-items:center;
-    justify-content:left;
     width:100%;
-    margin:auto;
-   font-weight:10em;
-   color:red;
+    font-weight:10em;
+    color:white;
+    padding:25px 10px;
 }
 
 .sectimg {
     display:flex;
-    padding:10px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    border:1px solid #cfbaf0;
 }
 
+.vidbg {
+    display:flex;
+    background-image: url(https://www.riverforestlibrary.org/wp-content/uploads/2018/02/Climate-Change.png);
+    background-size: cover;
+    border-radius:80%;
+    padding:10%;
+    border:3px solid red;
 
-    
+}
 #video {
   display:flex;
   margin:auto;
   padding:20px;
+  
 }
 
-
+#sector {
+    padding:50px;
+}
+.sectsol {
+    display:flex;
+    border-radius: 30%;
+    margin:auto;
+    width: 200px;
+    height: 200px;
+    border:1px solid #cfbaf0;
+}
+#p4 {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:auto;
+    font-size: 36px;
+}
 footer ol {
     background-image:url(https://www.dailymaverick.co.za/wp-content/uploads/2021/05/Tiara-OBPeditorialaunch-option-1.jpeg);
     background-size:cover;
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
+    color:red;
+    font-weight: bolder;
 }
+
 
 @media only screen and (max-width:750px) {
     .sectimg {
@@ -85,14 +138,14 @@ footer ol {
         flex-direction:column;
         margin:auto;
         padding:30px;
-        color:blue;
+        color:white;
         font-weight:10em;
     }
 
 }
 
 
-@media only screen and (max-width:625px) {
+@media only screen and (max-width:705px) {
     nav{
     display:flex;
     flex-direction:column;
@@ -106,6 +159,9 @@ footer ol {
       text-align: center;
       color:skyblue;
   }
+  p {
+      text-align: center;
+  }
 }
 
 
@@ -116,5 +172,23 @@ footer ol {
     #video {
         width:400px;
         height:200px;
+    }
+    #p4 {
+        font-size:24px;
+        text-align:center;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .fig1 {
+        width:250px;
+    }
+    #video {
+        width:200px;
+        height:150px;
+    }
+    #p4 {
+        font-size:16px;
+        text-align:center;
     }
 }
