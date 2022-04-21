@@ -100,8 +100,53 @@ p{
  
 img{
     display: block;
-    max-width: 60%
+    max-width: 100%
     
+}
+
+/*  footer here  */ 
+.footer{
+    background-color: #dddddd;
+    margin: 0 auto;
+   
+   
+}
+
+form{
+    
+    border: 2px solid black;
+  
+}
+
+
+
+
+
+.copyright{
+    
+    border: 2px solid black;
+     width: 30%;
+}
+
+
+
+
+
+
+.terms{
+     display: flex;
+    justify-content: flex-end;
+     gap: 1rem;
+     margin-bottom: 5px;
+     font-size: 30px
+}
+
+
+.termss{
+     display: flex;
+    justify-content: flex-end;
+     gap: 1rem;
+   
 }
 
 
