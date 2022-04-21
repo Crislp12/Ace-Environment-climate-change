@@ -72,15 +72,13 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-
     z-index: -1;
     
 }
 #solu{
     display: flex;
-    align-items: center;
     position:absolute;
-
+    margin: auto;
     z-index: 1;
     
 }
@@ -120,21 +118,22 @@ section{
 }
 
 #video{
-    display: flex;
+    display:flex;
     flex-direction:column;
     justify-content:center;
     text-align: center;
-    align-content:center;
+    margin:auto;
+    padding:20px;
+  
 }
-iframe{
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align: center;
-    align-content:center;
-    
+
+#vid{
+    display:flex;
+    margin:auto;
 }
 footer{
     display: flex;
     justify-content: flex-end;
+    font-weight: bolder;
+    background-color:rgb(153,191,55); 
 }
