@@ -8,3 +8,7 @@ header{
     top:0;
 
 }
+body{
+    width:99%;
+    background-color: rgb(197,189,153);
+}
