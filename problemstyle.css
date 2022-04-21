@@ -18,7 +18,18 @@ nav {
   background-size:auto;
 
 }
-
+.CC:hover {
+    color:blue;
+    cursor:grab;
+}
+.Pro:hover  {
+    color:blue;
+    cursor:grab;
+}
+.Sol:hover  {
+    color:blue;
+    cursor:grab;
+}
 h1 {
     margin:50px;
     font-weight: bolder;
@@ -54,6 +65,9 @@ p:hover{
     font-size: 24px;
     font-weight: bolder;
     
+}
+.point {
+    cursor:grabbing;
 }
 
 main{
@@ -190,5 +204,10 @@ footer ol {
     #p4 {
         font-size:16px;
         text-align:center;
+    }
+    #foot li{
+        font-size: 10px;
+        font-weight: bolder;
+        color:white;
     }
 }
