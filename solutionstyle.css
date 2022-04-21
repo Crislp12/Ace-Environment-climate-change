@@ -118,3 +118,23 @@ section{
     width: 70%;
     height: 60%;
 }
+
+#video{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align: center;
+    align-content:center;
+}
+iframe{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align: center;
+    align-content:center;
+    
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
