@@ -42,7 +42,7 @@ li{
     font-size: 25px
 
 }
-.row{
+.links{
     display: flex;
     flex-direction: row;
     gap:10px;
@@ -80,7 +80,7 @@ a:hover{
     display: flex;
     align-items: center;
     position:absolute;
-    
+    left: 278px;
     z-index: 1;
     
 }
@@ -91,3 +91,11 @@ a:hover{
     padding-right: 30%;
     padding-left:30%;
 }
+
+.row{
+    display: flex;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
