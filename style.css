@@ -6,7 +6,40 @@
 
 
 
-.hey{
+
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+
+#section{
+    line-height: 1.6;
+    font-size: 1.3125rem;
+    font-weight: 400;
+    padding: 3rem 0;
+   border: 2px solid black;
+}
+
+
+section{
+     padding: 3rem 0;
+}
+
+
+h1,h2{
+    
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: .5em;
+}
+
+p{
+    margin-bottom: 1em
+}
+
+
+.head{
     width: 100%;
     background-color: beige;
    display: flex;
@@ -29,16 +62,61 @@
 
 .list li{
     display: inline;
-    margin-right:  35px;
-    
+    margin-right: 20px;
+}
+
+.im{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+}
+
+.container{
+    border: 2px solid black;
+     margin: 0 auto;
+     width: 90%;
+   
+     
+}
+
+.text-center{
+    text-align: center
+}
+
+/*
+.pic{
+    width: 200px;
+    height: 200px;
+}
+ 
+ */
+ 
+ .split{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ 
+ 
+img{
+    display: block;
+    max-width: 60%
     
 }
 
 
 
 
-.img{
-    
-    height: 500px;
-    width: 300px
+@media only screen and (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+  
+  .split > * {
+      flex-basis: 100%;
+  }
+  
+  .split > * + *{
+      margin-left: 2em;
+  }
 }
