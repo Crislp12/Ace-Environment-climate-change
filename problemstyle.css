@@ -40,13 +40,23 @@ h2 {
     color:red;
     text-align: center;
 }
-
+figure {
+    position:relative;
+}
 .fig1 {
   display:flex;
   margin:auto;
   padding:20px;
+  position:relative;
+  left:200px;
+  animation: time 8s infinite linear alternate;
+  cursor:none;
 }
 
+@keyframes time{
+    from {left:0px;}
+    to{left:calc(100%-400px);}
+}
 
 #navbar, li {
     display:flex;
@@ -96,8 +106,14 @@ main{
     width: 200px;
     height: 200px;
     border:1px solid #cfbaf0;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 
+@keyframes slidein {
+    from {margin-left:100%}
+    to{margin-left:0;}
+}
 .vidbg {
     display:flex;
     background-image: url(https://www.riverforestlibrary.org/wp-content/uploads/2018/02/Climate-Change.png);
