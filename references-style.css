@@ -60,3 +60,12 @@ a{
 a:hover{
     color: green;
 }
+footer{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    background-color:#a4ac86;
+    height:50px;
+    width:100%;
+
+}
