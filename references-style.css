@@ -69,3 +69,46 @@ footer{
     width:100%;
 
 }
+
+
+
+
+
+@media only screen and (max-width: 300px) {
+    nav {
+      flex-direction:column;
+  }
+    #idrow{
+        flex-direction:column;
+    }
+    #header{
+        font-size: 10vw;
+    }
+}
+@media only screen and (max-width: 580px) {
+  .links, #idrow{
+      font-size:4vw;
+  }
+  nav {
+      flex-direction:column;
+  }
+    #idrow{
+        flex-direction:row;
+    }
+
+}
+@media screen and (max-width:480px) {  
+  footer{
+      flex-direction:column;
+  }
+    nav {
+      width: 100%
+  }
+    #idrow{
+        flex-direction:row;
+    }
+    #header{
+        font-size: 5vw;
+    }
+}
+
