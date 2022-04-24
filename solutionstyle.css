@@ -162,15 +162,10 @@ footer{
 
 
 
-@media only screen and (max-width: 40em) {
-  nav {
-      flex-direction:column;
-  }
-  
-}
+
 @media only screen and (max-width: 300px) {
     nav {
-      flex-direction:row;
+      flex-direction:column;
   }
     #idrow{
         flex-direction:column;
@@ -208,6 +203,15 @@ footer{
    height: 30vh;
    width: 80vw;
   }
+  .links, #idrow{
+      font-size:4vw;
+  }
+  nav {
+      flex-direction:column;
+  }
+    #idrow{
+        flex-direction:row;
+    }
 
 }
 
@@ -216,24 +220,19 @@ footer{
   .row{
     display: none;
   }
- .links, #idrow{
-      font-size:5vw;
-  }
- .links, #idrow{
-      font-size:5vw;
-  }
+ 
   footer{
       flex-direction:column;
   }
     nav {
-      flex-direction:row;
+      
       width: 100%
   }
   #img1, #solu{
       display: none;
   }
     #idrow{
-        flex-direction:column;
+        flex-direction:row;
     }
     #header{
         font-size: 5vw;
