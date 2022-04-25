@@ -53,7 +53,7 @@ justify-content: space-around;
 }
 
 .top .done .effect:hover{
-    color: red;
+     color: green !important;
   
 }
 
@@ -73,9 +73,10 @@ justify-content: space-around;
 }
 
 .kids:hover{
-     color: red;
-    
+    color: green !important;
 }
+    
+
 
 .logo{
   font-size: 60px;
