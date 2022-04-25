@@ -8,6 +8,8 @@ header {
     position: sticky;
     top:0px;
 }
+
+
 .container-fluid{
   background-color: beige;
   height: 110px;
@@ -21,22 +23,16 @@ header {
 .navbar-nav{
   font-size: 25px;
   display: flex;
-  gap: 3rem
+  gap: 2rem
 }
 .navbar-collapse {
     background-color: white;
-    opacity:0.5;
-}
-h1{
-    margin-left: 20px;
-    display: flex;
-    justify-content:flex-start;
-    font-size: 40px
+    opacity:0.8;
 }
 
 body{
     width:100%;
-    background-color: #E9EDC9;
+
 }
 .links{
     display: flex;
@@ -54,22 +50,20 @@ a:hover{
 }
 
 
-h2 {
+.count {
     color:red;
     text-align: center;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     padding:20px 0px 0px;
+    font-size: 24px;
 }
-figure {
-    position:relative;
-}
+
+
 .fig1 {
   display:flex;
   margin:auto;
-  position:relative;
-  left:200px;
+  position: relative;
   animation: time 2s infinite linear alternate;
-  cursor:error;
   width:600px;
 }
 
@@ -246,6 +240,9 @@ footer{
         padding:30px;
         color:white;
         font-weight:10em;
+    }
+    #psol {
+        font-size: 16px;
     }
 
 }
