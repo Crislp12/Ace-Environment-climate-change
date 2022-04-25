@@ -2,6 +2,8 @@
     margin: 0px;
     padding:0px;
     box-sizing: border-box;
+    font-family: 'Nanum Myeongjo', serif;
+    
 }
 .container-fluid {
   background-color: beige;
@@ -19,19 +21,11 @@
   gap: 3rem
 }
 
-
-
-
-
-
-
-
-
-
 body{
     width:100%;
     background-color: #e9edc9 !important;
 }
+
 h1{
     margin-left: 20px;
     display: flex;
@@ -40,11 +34,11 @@ h1{
 }
 
 h2,h1{
-   
     display: flex;
     justify-content:center;
     align-items:center;
 }
+
 header{
     position: sticky;
     top:0;
@@ -61,44 +55,40 @@ nav{
 
 li{
     list-style: none;
-
-    
 }
-
 
 #idrow{
     display:flex;
     padding: 20px;
     justify-content:space-around;
     font-size:2vw;
-    
-
 }
+
 .links{
     display: flex;
     flex-direction: row;
     gap:15px;
-
 }
-a:link { 
+
+a:link{ 
     text-decoration: none;
-    }
+}
+
 a{
     color: black !important;
-    
 }
+
 a:hover{
     color: green!important;
 }
-.everything{
-     
-     width: 100%;
-     display: flex;
-     flex-direction:column;
-     justify-content:center;
-     align-items:center;
-     margin:auto;
 
+.everything{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
 }
 
 .container{
@@ -112,12 +102,9 @@ a:hover{
     padding:20px;
 }
 
-
 .para{
-    
     padding-top:30px;
     padding-bottom: 30px;
-    
     padding-right:30px;
 }
 
@@ -128,7 +115,6 @@ footer{
     background-color:#a4ac86;
     height:50px;
     width:100%;
-
 }
 
 @media only screen and (max-width: 985px) {
