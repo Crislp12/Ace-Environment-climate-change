@@ -2,7 +2,10 @@
     margin: 0px;
     padding:0px;
     box-sizing: border-box;
+    font-family: 'Nanum Myeongjo', serif;
+    
 }
+
 .container-fluid {
   background-color: beige;
   height: 110px;
@@ -90,7 +93,9 @@ dl,h1,h2{
     
     
 }
-
+section{
+    margin:auto;
+}
 dt{
     font-size:20px;
     padding: 15px;
@@ -106,6 +111,15 @@ footer{
     height:50px;
     width:100%;
 
+}
+
+@media only screen and (max-width:1500px) {
+      .navbar-brand{
+      font-size: 18px;
+}
+    .navbar-nav{
+      font-size: 12px;
+      gap:1.2em;
 }
 
 @media only screen and (max-width: 985px) {
