@@ -5,34 +5,53 @@
 }
 
 header {
-  position:sticky;
-  top:0;
-  font-size:24px;
+    position: sticky;
+    top:0px;
+}
+.container-fluid{
+  background-color: beige;
+  height: 110px;
+}
+.navbar-brand{
+  font-size: 60px;
+   display: flex;
+  gap: 1.5rem;
+  margin-left: 50px;
+}
+.navbar-nav{
+  font-size: 25px;
+  display: flex;
+  gap: 3rem
+}
+.navbar-collapse {
+    background-color: white;
+    opacity:0.5;
+}
+h1{
+    margin-left: 20px;
+    display: flex;
+    justify-content:flex-start;
+    font-size: 40px
 }
 
-nav {
-  display:flex;
-  justify-content:space-between;
-  background-image:url(https://www.sap.com/dam/application/imagelibrary/photos/278000/278132.jpg/_jcr_content/renditions/278132_photo_2480_0676.jpg.adapt.1920_522.false.false.false.false.jpg/1588261069982.jpg);
-  opacity:0.9;
-  background-size:auto;
-  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-
+body{
+    width:100%;
+    background-color: #E9EDC9;
 }
-.naver:hover {
-    color:blue;
-    cursor:grab;
+.links{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
 }
-
-.hype {
-    color:grey;
+a:link {
+    text-decoration: none;
+    }
+a{
+    color: black !important;
 }
-h1 {
-    margin:50px;
-    font-weight: bolder;
-    color: blue;
+a:hover{
+    color: green !important;
 }
-
 
 
 h2 {
@@ -68,18 +87,16 @@ figure {
     font-weight:bolder;
 }
 
-p {
+.point {
     padding:40px 30px;
     font-size:18px;
+    cursor:grabbing;
 }
 
-p:hover{
+.point:hover{
     font-size: 30px;
     font-weight: bolder;
     
-}
-.point {
-    cursor:grabbing;
 }
 
 main{
@@ -130,6 +147,8 @@ main{
     animation-duration: 3s;
     animation-name: slidein;
 }
+
+
 
 @keyframes slidein {
     from {margin-left:100%}
@@ -197,19 +216,24 @@ main{
     }
   }
 
-footer ol{
-    background-image:url(https://www.dailymaverick.co.za/wp-content/uploads/2021/05/Tiara-OBPeditorialaunch-option-1.jpeg);
-    background-size:cover;
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-    color:red;
+footer{
+    display: flex;
+    justify-content: space-between;
     font-weight: bolder;
-    font-size:18px;
-    opacity: 0.9;
+    background-color:#a4ac86;
+    height:50px;
+    width:100%;
 }
 
+@media only screen and (max-width:1250px) {
+      .navbar-brand{
+      font-size: 25px;
+}
+    .navbar-nav{
+      font-size: 18px;
+      gap:1.2em;
+
+}
 
 @media only screen and (max-width:750px) {
     .sectimg {
@@ -228,24 +252,14 @@ footer ol{
 
 
 @media only screen and (max-width:705px) {
-    nav{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-  }
   .fig1 {
       width:500px;
   }
-  footer ol {
-      text-align: center;
-      color:cyan;
-  }
-  p {
+
+  .out {
       text-align: center;
   }
 }
-
 
 @media only screen and (max-width:560px) {
     .fig1 {
@@ -259,12 +273,13 @@ footer ol{
         font-size:24px;
         text-align:center;
     }
+    nav {
+      flex-direction:column;
+  }
 }
 
 @media only screen and (max-width:475px) {
-    nav{
-    font-size: 20px;
-  }
+
     .fig1 {
         width:250px;
     }
@@ -276,9 +291,18 @@ footer ol{
         font-size:16px;
         text-align:center;
     }
-    #foot li{
-        font-size: 14px;
-        font-weight: bolder;
-        color:black;
+      footer{
+      flex-direction:column;
+      align-items:center;
+      height:120px
+
+  }
+    nav {
+      width: 100%
+  }
+    #header{
+        font-size: 5vw;
+        
+        }
     }
 }
