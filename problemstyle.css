@@ -8,35 +8,38 @@ header {
     position: sticky;
     top:0px;
 }
-.container-fluid{
+
+nav{
+    display: flex;
+    background-color:#fefae0;
+    height: 100px;
+    align-items:center;
+    justify-content:space-between;
+    z-index: 3;
+}
+.container-fluid {
   background-color: beige;
   height: 110px;
 }
-.navbar-brand{
+.navbar-brand {
   font-size: 60px;
-   display: flex;
+  display: flex;
   gap: 1.5rem;
   margin-left: 50px;
 }
-.navbar-nav{
+.navbar-nav {
   font-size: 25px;
   display: flex;
-  gap: 3rem
+  gap: 3rem    
 }
 .navbar-collapse {
-    background-color: white;
-    opacity:0.5;
-}
-h1{
-    margin-left: 20px;
-    display: flex;
-    justify-content:flex-start;
-    font-size: 40px
+    background-color: #f5f5dc;
+    opacity:0.8;
 }
 
 body{
     width:100%;
-    background-color: #E9EDC9;
+
 }
 .links{
     display: flex;
@@ -54,28 +57,25 @@ a:hover{
 }
 
 
-h2 {
+.count {
     color:red;
     text-align: center;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     padding:20px 0px 0px;
+    font-size: 24px;
 }
-figure {
-    position:relative;
-}
+
+
 .fig1 {
   display:flex;
   margin:auto;
-  position:relative;
-  left:200px;
-  animation: time 2s infinite linear alternate;
-  cursor:error;
-  width:600px;
+  animation:slidein 5s infinite alternate;
 }
 
-@keyframes time{
-    from {left:-10%}
-    to{left:5%;}
+
+@keyframes slidein {
+    from {margin-left:100%}
+    to{margin-left:0;}
 }
 
 #navbar, li {
@@ -225,17 +225,22 @@ footer{
     width:100%;
 }
 
-@media only screen and (max-width:1250px) {
+@media only screen and (max-width:1500px) {
       .navbar-brand{
-      font-size: 25px;
+      font-size: 18px;
 }
     .navbar-nav{
-      font-size: 18px;
+      font-size: 12px;
       gap:1.2em;
 
 }
 
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:991px) {
+     .navbar-collapse{
+      background-color: white;
+      opacity: 0.8;
+    }
+}
     .sectimg {
         display:none;
     }
@@ -246,6 +251,9 @@ footer{
         padding:30px;
         color:white;
         font-weight:10em;
+    }
+    #psol {
+        font-size: 16px;
     }
 
 }
@@ -276,6 +284,10 @@ footer{
     nav {
       flex-direction:column;
   }
+    .sectsol {
+        width:100px;
+        height:100px;
+    }
 }
 
 @media only screen and (max-width:475px) {
@@ -303,6 +315,5 @@ footer{
     #header{
         font-size: 5vw;
         
-        }
-    }
+  }
 }
