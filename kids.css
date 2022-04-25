@@ -1,0 +1,231 @@
+*{
+    padding: 0; 
+    margin: 0;
+    text-decoration:  none;  
+}
+
+
+
+
+
+
+body {
+    background-color: lightblue;
+  }
+  
+  .bigdiv{
+      width: 98%;
+     
+      margin:  0 auto;
+  }
+.major{
+
+  display: flex;
+justify-content: space-around;
+  background-color: beige;
+}
+
+
+
+.top{
+    width: 100%;
+    height: 100px;
+  
+}
+
+.top > .done  {
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;
+    
+}
+
+
+.top .done .effect{
+    
+  text-decoration:  none; 
+  font-size: 30px;
+  font-family: ariel; 
+   color: black; 
+  padding: 0 20px;
+  
+  
+}
+
+.top .done .effect:hover{
+    color: red;
+  
+}
+
+.bb{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.kids{
+    
+    display: flex;
+    margin-right: 20px;
+    font-style: italic;
+    
+}
+
+.kids:hover{
+     color: red;
+    
+}
+
+.logo{
+  font-size: 60px;
+}
+
+
+
+
+
+
+.move{
+    height: 32rem;
+   display: flex;
+   justify-content: center;
+  margin-bottom: 50px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.bigbox{
+    margin-top: 40px;
+    padding: 2%;
+  
+    display: flex;
+    justify-content: space-around;
+}
+
+.carousel-item{
+    
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.carousel-caption{
+    color: white;
+    background-color: lightblue;
+}
+
+
+.holder{
+    background-color: white;
+    border: 4px  solid white;
+    height: 300px;
+    width:  375px;
+    margin-bottom: 5px;
+  
+    
+}
+
+.watch{
+    
+    display: flex;
+   background-color: red;
+   color: white;
+   width: 20%;
+   margin: 0 auto;
+   text-align: center
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+    
+}
+
+
+
+
+
+@media only screen and (min-width: 600px){
+
+  .carousel-item{
+    height: 32rem;
+  
+   
+    
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  
+  
+  .top{
+      display: none;
+  }
+  
+ 
+  .bigbox{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  justify-content: space-between;
+  
+}
+
+.holder{
+    width: auto;
+    height: auto;
+     border-radius: 48%;
+    
+}
+
+iframe{
+    margin-top: 2px;
+     border-radius: 45%;
+}
+
+  
+  
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.move{
+   
+   height: 18rem; 
+}
+
+
+.carousel-item{
+    height: 18rem;}
+
+
+#newsletter1{
+    width: 40%
+}
+  
+}
