@@ -64,7 +64,9 @@ h2 {
 }
 
 p {
-    margin-bottom: 1em
+    margin-bottom: 1em;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
 
@@ -132,6 +134,15 @@ p {
     justify-content: space-around;
     padding: .5rem 0;
 }
+
+.effect{
+   text-decoration:  none; 
+   color: black; 
+ 
+}
+
+
+
   .box {
    
     margin: 0 auto;
@@ -179,6 +190,10 @@ p {
 }
 
 
+@keyframes slidein {
+    from {margin-right:100%}
+    to{margin-right:0;}
+}
 
 
 @media only screen and (min-width: 40em) {
