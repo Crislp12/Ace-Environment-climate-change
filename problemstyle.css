@@ -156,15 +156,15 @@ main{
     width: 200px;
     height: 200px;
     border:3px solid #cfbaf0;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 
 
 
 @keyframes slidein {
-    from {margin-left:100%}
-    to{margin-left:0;}
+    from {margin-right:100%}
+    to{margin-right:0;}
 }
 
 .vidbg {
