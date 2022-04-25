@@ -101,7 +101,7 @@ footer{
         font-size: 10vw;
     }
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 750px) {
   .links, #idrow{
       font-size:4vw;
   }

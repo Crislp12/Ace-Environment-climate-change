@@ -214,6 +214,18 @@ footer{
     }
 
 }
+@media only screen and (max-width: 750px) {
+  .links, #idrow{
+      font-size:4vw;
+  }
+  nav {
+      flex-direction:column;
+  }
+    #idrow{
+        flex-direction:row;
+    }
+
+}
 
 
 @media screen and (max-width:480px) {  
