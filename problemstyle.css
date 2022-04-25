@@ -2,6 +2,9 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Nanum Myeongjo', serif;
+
+
 }
 
 header {
@@ -22,15 +25,15 @@ nav{
   height: 110px;
 }
 .navbar-brand {
-  font-size: 60px;
+  font-size: 40px!important;
   display: flex;
-  gap: 1.5rem;
-  margin-left: 50px;
+  gap: 1rem;
+  margin-left: 30px;
 }
 .navbar-nav {
   font-size: 25px;
   display: flex;
-  gap: 3rem    
+  gap: 1rem    
 }
 .navbar-collapse {
     background-color: #f5f5dc;
@@ -223,24 +226,42 @@ footer{
     background-color:#a4ac86;
     height:50px;
     width:100%;
+    padding:0px 5px;
 }
+
 
 @media only screen and (max-width:1500px) {
-      .navbar-brand{
-      font-size: 18px;
-}
-    .navbar-nav{
-      font-size: 12px;
-      gap:1.2em;
 
+    .navbar-nav{
+      font-size: 20px;
+      gap:1em;
+    }
 }
+
+@media only screen and (max-width:1330px) {
+
+    .navbar-nav{
+      font-size: 14px;
+      gap:1em;
+    }
+}
+@media only screen and (max-width:1150px) {
+
+    .navbar-nav{
+      font-size: 10px;
+      gap:0.5em;
+    }
+}
+
 
 @media only screen and (max-width:991px) {
      .navbar-collapse{
       background-color: white;
       opacity: 0.8;
     }
-}
+    .navbar-nav{
+      font-size: 20px;
+    }
     .sectimg {
         display:none;
     }
@@ -255,7 +276,6 @@ footer{
     #psol {
         font-size: 16px;
     }
-
 }
 
 
@@ -287,6 +307,9 @@ footer{
     .sectsol {
         width:100px;
         height:100px;
+    }
+     .navbar-nav{
+      font-size: 12px;
     }
 }
 

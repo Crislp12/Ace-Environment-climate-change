@@ -20,10 +20,10 @@ nav {
   background-size:auto;
   
 }
-.nav-link {
+a {
     color:black !important;
 }
-.nav-link:hover {
+a:hover {
     color:green !important;
 }
 
