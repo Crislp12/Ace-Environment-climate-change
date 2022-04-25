@@ -10,7 +10,12 @@ h1{
     font-size: 40px
 }
 
-
+h2,h3{
+   
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
 header{
     position: sticky;
     top:0;
@@ -59,6 +64,36 @@ a{
 a:hover{
     color: green;
 }
+.everything{
+     
+     width: 100%;
+     display: flex;
+     flex-direction:column;
+     justify-content:center;
+     align-items:center;
+     margin:auto;
+
+}
+
+.container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border: 2px solid black;
+    margin: 10px;
+    width: 95vw;
+    height: 45%;
+    padding:20px;
+}
+
+
+.para{
+    
+    padding-top:30px;
+    padding-bottom: 30px;
+    
+    padding-right:30px;
+}
 
 footer{
     display: flex;
@@ -69,8 +104,6 @@ footer{
     width:100%;
 
 }
-
-
 
 
 
@@ -85,6 +118,46 @@ footer{
         font-size: 10vw;
     }
 }
+@media only screen and (max-width: 580px) {
+  .container{
+      flex-direction:column;
+      justify-content:center;
+      width: 85vw;
+      height: 45%;
+  }
+  .text{
+    display: flex;
+    flex-direction:column;
+    align-content:center;
+    margin: auto
+      
+  }
+  section{
+      flex-direction:column;
+      justify-content:center;
+  }
+  .para{
+    
+    margin-bottom:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+ .row{
+   height: 30vh;
+   width: 80vw;
+  }
+  .links, #idrow{
+      font-size:4vw;
+  }
+  nav {
+      flex-direction:column;
+  }
+    #idrow{
+        flex-direction:row;
+    }
+
+}
 @media only screen and (max-width: 750px) {
   .links, #idrow{
       font-size:4vw;
@@ -97,17 +170,23 @@ footer{
     }
 
 }
+
+
 @media screen and (max-width:480px) {  
+  .row{
+    display: none;
+  }
+ 
   footer{
       flex-direction:column;
   }
     nav {
+      
       width: 100%
   }
+  
     #idrow{
         flex-direction:row;
     }
-    #header{
-        font-size: 5vw;
-    }
+    
 }
