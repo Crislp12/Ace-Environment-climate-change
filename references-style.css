@@ -20,7 +20,10 @@
 }
 
 
-
+body{
+    width:100%;
+    background-color: #e9edc9 !important;
+}
 
 h1{
     margin-left: 20px;
