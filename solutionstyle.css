@@ -6,16 +6,20 @@
 
 h1{
     margin-left: 20px;
+    display: flex;
+    justify-content:flex-start;
+    font-size: 40px
+}
+header{
+    position: sticky;
+    top:0;
 }
 body{
     width:100%;
     background-color: #e9edc9;
 }
 nav{
-    position:sticky;
-    top:0;
     display: flex;
-    
     background-color:#fefae0;  
     
     height: 100px;
@@ -31,11 +35,7 @@ li{
     
 }
 
-#header{
-    display: flex;
-    justify-content:flex-start;
-    font-size: 40px
-}
+
 #idrow{
     display:flex;
     padding: 20px;
