@@ -15,7 +15,7 @@
     line-height: 1.6;
     font-size: 1.3125rem;
     font-weight: 400;
-   background-color:  #999966;
+   background-color:  #e9edc9;
 }
 
 
@@ -39,7 +39,7 @@ p {
 
 .head {
 
-    background-color: beige;
+    background-color: #fefae0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -133,7 +133,7 @@ p {
 /*  footer here  */
 
 .footer {
-    background-color: #dddddd;
+    background-color: #a4ac86;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;

@@ -3,67 +3,62 @@
     padding:0px;
     box-sizing: border-box;
 }
-header{
-    position:sticky;
-    top:0;
-    
 
-}
 h1{
     margin-left: 20px;
+    display: flex;
+    justify-content:flex-start;
+    font-size: 40px
+}
+header{
+    position: sticky;
+    top:0;
 }
 body{
     width:100%;
-    background-color: rgb(197,189,153);
+    background-color: #e9edc9;
 }
 nav{
-    position:sticky;
-    top:0;
     display: flex;
-    height: 75px;
-    background-color:rgb(153,191,55);  
-    width: 100%;
+    background-color:#fefae0;  
+    
     height: 100px;
-    flex-direction: row;
     align-items:center;
     justify-content:space-between;
-    z-index: 5px;
+
     
     
 }
 li{
     list-style: none;
-    padding:20px;
+
     
 }
-#header{
-    display: flex;
-    justify-content:flex-start;
-    font-size: 40px
-}
+
+
 #idrow{
     display:flex;
-    flex-direction: row;
-    align-items:center;
-    margin: 10px;
-    font-size: 25px
+    padding: 20px;
+    justify-content:space-around;
+    font-size:2vw;
+    
 
 }
 .links{
     display: flex;
     flex-direction: row;
-    gap:10px;
+    gap:15px;
 
 }
 a:link { 
     text-decoration: none;
     }
-a:visited{
+a{
     color: black;
     
 }
 a:hover{
-    color: hotpink;
+    color: green;
 }
 
 #main{
@@ -72,6 +67,7 @@ a:hover{
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 #img1{
@@ -80,9 +76,14 @@ a:hover{
     align-items: center;
     justify-content: center;
     z-index: -1;
-    background-image: url(https://media.istockphoto.com/photos/rays-of-sunlight-streaming-through-mossy-forest-clearing-woodland-picture-id1173805090?k=20&m=1173805090&s=612x612&w=0&h=twmZ0JoKZtL9gMA4JUFz-LRJZIi1kW9xGy9K8O87xHI=);
+    width: 100vw;
+    background-image: url("https://media.istockphoto.com/photos/rays-of-sunlight-streaming-through-mossy-forest-clearing-woodland-picture-id1173805090?k=20&m=1173805090&s=612x612&w=0&h=twmZ0JoKZtL9gMA4JUFz-LRJZIi1kW9xGy9K8O87xHI="); 
+    background-repeat: no-repeat;
+    background-size: contain;
     background-size: cover;
-    width: 100%;
+    margin: auto;
+    height:350px;
+    
     
 }
 #solu{
@@ -98,31 +99,35 @@ a:hover{
     
 }
 
-section{
+.everything{
+     
      width: 100%;
      display: flex;
      flex-direction:column;
+     justify-content:center;
      align-items:center;
+     margin:auto;
 
 }
 
 .container{
     display: flex;
-    flex-direction:row;
     justify-content:center;
     align-items:center;
     border: 2px solid black;
-    margin: 20px 0;
-    width: 99vw;
+    margin: 10px;
+    width: 95vw;
+    height: 45%;
     padding:20px;
 }
 
 
 .para{
-    width: 70%;
-    height: 60%;
+    
     padding-top:30px;
     padding-bottom: 30px;
+    
+    padding-right:30px;
 }
 
 #video{
@@ -138,37 +143,110 @@ section{
 #vid{
     display:flex;
     margin:auto;
+    width: 80vw;
 }
 footer{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     font-weight: bolder;
-    background-color:rgb(153,191,55);
+    background-color:#a4ac86;
     height:50px;
     width:100%;
+
 }
 
 .row{
-
-    width:50vw;
+    height: 30vh; 
+    width:35vw;
 }
 
-@media only screen and (max-width: 580px) {
-  nav{
+
+
+
+@media only screen and (max-width: 300px) {
+    nav {
       flex-direction:column;
   }
-  
+    #idrow{
+        flex-direction:column;
+    }
+    #header{
+        font-size: 10vw;
+    }
 }
 @media only screen and (max-width: 580px) {
   .container{
       flex-direction:column;
+      justify-content:center;
+      width: 85vw;
+      height: 45%;
   }
   .text{
-    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-content:center;
+    margin: auto
+      
+  }
+  section{
+      flex-direction:column;
+      justify-content:center;
+  }
+  .para{
+    
+    margin-bottom:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+
 }
+ .row{
+   height: 30vh;
+   width: 80vw;
+  }
+  .links, #idrow{
+      font-size:4vw;
+  }
+  nav {
+      flex-direction:column;
+  }
+    #idrow{
+        flex-direction:row;
+    }
+
 }
-@media only screen and (max-width:567px){
-    #vid{
-        width:100%;
+@media only screen and (max-width: 750px) {
+  .links, #idrow{
+      font-size:4vw;
+  }
+  nav {
+      flex-direction:column;
+  }
+    #idrow{
+        flex-direction:row;
+    }
+
+}
+
+
+@media screen and (max-width:480px) {  
+  .row{
+    display: none;
+  }
+ 
+  footer{
+      flex-direction:column;
+  }
+    nav {
+      
+      width: 100%
+  }
+  #img1, #solu{
+      display: none;
+  }
+    #idrow{
+        flex-direction:row;
+    }
+    #header{
+        font-size: 5vw;
     }
 }
