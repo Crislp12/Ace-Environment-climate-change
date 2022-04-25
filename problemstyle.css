@@ -9,24 +9,31 @@ header {
     top:0px;
 }
 
-
-.container-fluid{
+nav{
+    display: flex;
+    background-color:#fefae0;
+    height: 100px;
+    align-items:center;
+    justify-content:space-between;
+    z-index: 3;
+}
+.container-fluid {
   background-color: beige;
   height: 110px;
 }
-.navbar-brand{
+.navbar-brand {
   font-size: 60px;
-   display: flex;
+  display: flex;
   gap: 1.5rem;
   margin-left: 50px;
 }
-.navbar-nav{
+.navbar-nav {
   font-size: 25px;
   display: flex;
-  gap: 2rem
+  gap: 3rem    
 }
 .navbar-collapse {
-    background-color: white;
+    background-color: #f5f5dc;
     opacity:0.8;
 }
 
@@ -62,14 +69,13 @@ a:hover{
 .fig1 {
   display:flex;
   margin:auto;
-  position: relative;
-  animation: time 2s infinite linear alternate;
-  width:600px;
+  animation:slidein 5s infinite alternate;
 }
 
-@keyframes time{
-    from {left:-10%}
-    to{left:5%;}
+
+@keyframes slidein {
+    from {margin-left:100%}
+    to{margin-left:0;}
 }
 
 #navbar, li {
@@ -219,17 +225,22 @@ footer{
     width:100%;
 }
 
-@media only screen and (max-width:1250px) {
+@media only screen and (max-width:1500px) {
       .navbar-brand{
-      font-size: 25px;
+      font-size: 18px;
 }
     .navbar-nav{
-      font-size: 18px;
+      font-size: 12px;
       gap:1.2em;
 
 }
 
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:991px) {
+     .navbar-collapse{
+      background-color: white;
+      opacity: 0.8;
+    }
+}
     .sectimg {
         display:none;
     }
@@ -273,6 +284,10 @@ footer{
     nav {
       flex-direction:column;
   }
+    .sectsol {
+        width:100px;
+        height:100px;
+    }
 }
 
 @media only screen and (max-width:475px) {
@@ -300,6 +315,5 @@ footer{
     #header{
         font-size: 5vw;
         
-        }
-    }
+  }
 }
