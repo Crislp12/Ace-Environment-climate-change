@@ -7,17 +7,18 @@
   background-color: beige;
   height: 110px;
 }
-.navbar-brand{
+.navbar-brand {
   font-size: 60px;
-   display: flex;
+  display: flex;
   gap: 1.5rem;
   margin-left: 50px;
 }
-.navbar-nav{
+.navbar-nav {
   font-size: 25px;
   display: flex;
   gap: 3rem
 }
+
 .navbar-collapse {
     background-color: beige;
     opacity:0.8;
@@ -183,7 +184,12 @@ footer{
     width:35vw;
 }
 
-
+@media only screen and (max-width: 985px) {
+  .navbar-collapse{
+  background-color: white;
+  opacity: 0.9;
+}
+}
 
 
 @media only screen and (max-width: 300px) {
