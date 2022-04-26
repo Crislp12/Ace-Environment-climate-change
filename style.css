@@ -119,12 +119,11 @@ p {
 .img{
    height: 400px;
    background-image: url(https://media4.giphy.com/media/3JTvnMk35PBvxcOPjS/giphy.gif?cid=ecf05e47bjyj4alk7crk6a8qhbxp4w3cp84glyjdqucj0cpp&rid=giphy.gif&ct=g);
-    
-      background-size: cover;
-     display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 30px;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
      
 }
 .ace{
