@@ -147,7 +147,7 @@ footer{
     display: flex;
     flex-direction:column;
     align-content:center;
-    margin: auto
+    margin: auto;
       
   }
   section{
@@ -174,7 +174,13 @@ footer{
     #idrow{
         flex-direction:row;
     }
-
+  footer{
+    height: 70px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+  }
 }
 @media only screen and (max-width: 750px) {
   .links, #idrow{
@@ -193,10 +199,6 @@ footer{
 @media screen and (max-width:480px) {  
   .row{
     display: none;
-  }
- 
-  footer{
-      flex-direction:column;
   }
     nav {
       
