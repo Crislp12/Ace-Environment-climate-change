@@ -210,6 +210,7 @@ main{
     }
   }
 #psol {
+    color:white !important;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -228,7 +229,9 @@ main{
       transform: translateY(-10px);
     }
   }
-
+#psol:hover {
+    color:green !important;
+}
 footer{
     display: flex;
     justify-content: space-between;
@@ -260,6 +263,9 @@ footer{
     .navbar-nav{
       font-size: 10px;
       gap:0.5em;
+    }
+    footer {
+        padding:0px 15px;
     }
 }
 
@@ -297,6 +303,12 @@ footer{
   .out {
       text-align: center;
   }
+     footer{
+      flex-direction:column;
+      align-items:center;
+      height:120px;
+      justify-content:center;
+     }
 }
 
 @media only screen and (max-width:560px) {
@@ -317,9 +329,6 @@ footer{
     .sectsol {
         width:100px;
         height:100px;
-    }
-     .navbar-nav{
-      font-size: 12px;
     }
 }
 
@@ -342,12 +351,6 @@ footer{
         font-size:16px;
         text-align:center;
     }
-      footer{
-      flex-direction:column;
-      align-items:center;
-      height:120px
-
-  }
     nav {
       width: 100%
   }
