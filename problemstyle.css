@@ -3,7 +3,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Nanum Myeongjo', serif;
-
+    cursor: url(walle.png),auto;
 
 }
 
@@ -102,7 +102,6 @@ a:hover{
 .point {
     padding:40px 30px;
     font-size:18px;
-    cursor:grabbing;
 }
 
 .point:hover{
