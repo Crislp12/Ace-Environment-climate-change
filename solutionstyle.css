@@ -62,7 +62,8 @@ a:hover{
 
 .img{
    height: 400px;
-   background-image: url(https://media.giphy.com/media/37QOWrwGOljUCbdDxd/giphy.gif);
+   background-image: url(https://giphy.com/gifs/cinemagraph-japan-river-i3Q3sx91EfmJq)
+   
    background-size: cover;
    display: flex;
    justify-content: center;
