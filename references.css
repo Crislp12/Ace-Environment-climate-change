@@ -11,7 +11,7 @@
   height: 110px;
 }
 .navbar-brand {
-  font-size: 60px;
+  font-size: 40px !important;
   display: flex;
   gap: 1.5rem;
   margin-left: 50px;
@@ -127,6 +127,12 @@ footer{
   background-color: white;
   opacity: 0.9;
 }
+
+.navbar{
+    padding: 0 !important
+}
+
+
 }
 
 
