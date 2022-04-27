@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
    font-family: 'Nanum Myeongjo', serif;
+   cursor:url(leaf.png),auto;
 }
 
 *,
@@ -41,7 +42,10 @@ body{
   display: flex;
   gap: 2rem
 }
-
+a {
+    color:black !important;
+    text-decoration: none;
+}
 a:hover{
     color: green !important;
 }
@@ -129,7 +133,7 @@ p {
     max-width: 100%;
     width:100vw;
     height:500px;
-    border-radius: 50px;
+    border-radius: 30%;
     padding: 0px;
 }
    
@@ -140,10 +144,9 @@ p {
 
 .footer {
     background-color: #a4ac86;
-    margin: 0 auto;
+    margin:auto;
     display: flex;
     justify-content: space-around;
-    padding: .5rem 0;
 }
 
 .effect{
@@ -187,7 +190,7 @@ p {
 #vid{
     display:flex;
     margin:auto;
-    width: 80vw;
+    width: 50vw;
 }
 
 
@@ -211,17 +214,40 @@ p {
     }
     
 
-
 }
+
+
+@media (max-width:1250px) {
+     .container {
+         width:100%;
+         height:50%;
+     }
+     .pic {
+         height:250px;
+         width:400px;
+     }
+}
+
+
 
 @media only screen and (max-width: 985px) {
   .navbar-collapse{
   background-color: white;
   opacity: 0.9;
 }
-  
 }
 
+
+@media (max-width:700px) {
+     .container {
+         width:100%;
+         height:30%;
+     }
+     .pic {
+         height:250px;
+         width:400px;
+     }
+}
 
 @media only screen and (max-width: 600px) {
     
@@ -252,7 +278,9 @@ p {
     font-size: 30px;
     margin-left: 0px;
   }
-
+.pic {
+        padding:10px;
+     }
 }
 
 
