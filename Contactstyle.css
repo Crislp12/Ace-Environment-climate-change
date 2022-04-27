@@ -10,7 +10,7 @@
   height: 110px;
 }
 .navbar-brand {
-  font-size: 60px;
+  font-size: 40px !important;
   display: flex;
   gap: 1.5rem;
   margin-left: 50px;
@@ -119,16 +119,29 @@ footer{
     background-color:#a4ac86;
     height:50px;
     width:100%;
+    padding:0 20px;
+}
+@media only screen and (max-width: 1140px) {
+
+  .navbar-nav {
+   font-size: 17px !important;
+}
 }
 
-@media only screen and (max-width: 985px) {
+@media only screen and (max-width: 992px) {
   .navbar-collapse{
   background-color: white;
   opacity: 0.9;
+  }
+  .navbar-nav {
+   font-size: 30px !important;
 }
 }
-
-
+@media only screen and (max-width: 780px) {
+  .container {
+    
+  }
+}
 @media only screen and (max-width: 300px) {
     nav {
       flex-direction:column;
@@ -166,8 +179,8 @@ footer{
 
 }
  .row{
-   height: 30vh;
-   width: 80vw;
+    height:300px;
+    width:300px;
   }
   .links, #idrow{
       font-size:4vw;
@@ -188,7 +201,9 @@ footer{
 }
 @media only screen and (max-width: 750px) {
   .links, #idrow{
-      font-size:4vw;
+      font-size:auto;
+      padding:20px 0px;
+      height:20px;
   }
   nav {
       flex-direction:column;
