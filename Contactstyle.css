@@ -1,226 +1,276 @@
-*{
-    margin: 0px;
-    padding:0px;
+* {
+    margin: 0;
+    padding: 0;
+   font-family: 'Nanum Myeongjo', serif;
+   cursor:url(leaf.png),auto;
+}
+
+*,
+*::before *::after {
     box-sizing: border-box;
-    font-family: 'Nanum Myeongjo', serif;
-    
 }
+
+
 .container-fluid {
-  background-color: beige;
-  height: 110px;
+  background-color: beige!important;
+  height: 130px;
 }
-.navbar-brand {
-  font-size: 40px !important;
-  display: flex;
-  gap: 1.5rem;
-  margin-left: 50px;
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+body{
+    background-color: beige !important;
 }
 .navbar{
-  padding: 0 !important;
+
+    padding: 0 !important;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  display: flex;
+  gap: 1rem;
+  margin-left: 50px;
+
 }
 
 .navbar-nav {
   font-size: 25px;
   display: flex;
-  gap: 3rem
+  gap: 2rem
 }
-
-body{
-    width:100%;
-    background-color: #e9edc9 !important;
-}
-
-h1{
-    margin-left: 20px;
-    display: flex;
-    justify-content:flex-start;
-    font-size: 40px
-}
-
-h2,h1{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-}
-
-header{
-    position: sticky;
-    top:0;
-}
-
-nav{
-    display: flex;
-    background-color:#fefae0;  
-    height: 100px;
-    align-items:center;
-    justify-content:space-between;
-    z-index: 3;
-}
-
-li{
-    list-style: none;
-}
-
-#idrow{
-    display:flex;
-    padding: 20px;
-    justify-content:space-around;
-    font-size:2vw;
-}
-
-.links{
-    display: flex;
-    flex-direction: row;
-    gap:15px;
-}
-
-a:link{ 
+a {
+    color:black !important;
     text-decoration: none;
 }
-
-a{
-    color: black !important;
-}
-
 a:hover{
-    color: green!important;
+    color: green !important;
 }
 
-.everything{
-    width: 100%;
+
+
+.solu{
+    color: white !important;
     display: flex;
+    position:absolute;
     flex-direction:column;
     justify-content:center;
-    align-items:center;
-    margin:auto;
+    align-content:center;
+    margin: auto;
+
+    font-size: 50px;
+
+    
 }
 
-.container{
-    display: flex;
-    justify-content:center;
-    align-items:center;
+.img{
+   height: 600px;
+   background-image: url(https://64.media.tumblr.com/3e4417b1e9ab0f6452c5ccc977212f39/af3550069fb66b8b-07/s540x810/9a9ade0b2cd9ab8157f69ca422bfc136bd994268.gifv);
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+   
+}
+
+
+
+ #section{
+    
+    line-height: 1.6;
+    font-size: 1.3125rem;
+    font-weight: 400;
+    
+}
+section {
+    padding: 3rem 0;
+}
+
+
+h1,
+h2,h3 {
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: .5em;
+}
+
+p {
+    margin-bottom: 1em;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+
+
+.container {
     border: 2px solid black;
-    margin: 10px;
-    width: 95vw;
-    height: 45%;
-    padding:20px;
+    margin: 0 auto;
+    width: 90%;
+    background-color:  white !important;
+    border-radius: 70px;
+    border: 5px solid darkgreen;
 }
 
-.para{
-    padding-top:30px;
-    padding-bottom: 30px;
-    padding-right:30px;
+.text-center {
+    text-align: center;
 }
 
-footer{
+
+.split {
     display: flex;
-    justify-content: space-between;
-    font-weight: bolder;
-    background-color:#a4ac86;
-    height:50px;
-    width:100%;
-    padding:0 20px;
-}
-@media only screen and (max-width: 1140px) {
-
-  .navbar-nav {
-   font-size: 17px !important;
-}
+    flex-direction: column;  
+    padding: 15px;
 }
 
-@media only screen and (max-width: 992px) {
+
+
+.pic {
+    display: block;
+    max-width: 100%;
+    width:100vw;
+    height:500px;
+    border-radius: 30%;
+    padding: 0px;
+    border:1px solid green;
+}
+   
+
+
+
+/*  footer here  */
+
+.footer {
+    background-color: #a4ac86;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.effect{
+   text-decoration:  none; 
+   color: black; 
+ 
+}
+
+
+
+.box {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 25px;
+    text-align: center
+}
+
+.terms {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 20px;
+
+}
+
+.termss {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+}
+
+.learn {
+    text-decoration: underline;
+    color:green !important;
+}
+@keyframes slidein {
+    from {margin-right:100%}
+    to{margin-right:0;}
+}
+
+
+@media only screen and (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split>* {
+        flex-basis: 100%;
+    }
+
+    .split>*+* {
+        margin-left: 2em;
+    }
+    
+
+}
+
+
+@media (max-width:1250px) {
+     .container {
+         width:100%;
+         height:50%;
+     }
+     .pic {
+         height:250px;
+         width:400px;
+     }
+}
+
+
+
+@media only screen and (max-width: 985px) {
   .navbar-collapse{
   background-color: white;
   opacity: 0.9;
-  }
-  .navbar-nav {
-   font-size: 30px !important;
+}
 }
 
-@media only screen and (max-width: 300px) {
-    nav {
-      flex-direction:column;
-  }
-    #idrow{
-        flex-direction:column;
-    }
-    #header{
-        font-size: 10vw;
-    }
+
+@media (max-width:700px) {
+     .container {
+         width:100%;
+         height:30%;
+     }
+     .pic {
+         height:250px;
+         width:400px;
+     }
 }
-@media only screen and (max-width: 580px) {
-  .container{
-      flex-direction:column;
-      justify-content:center;
-      width: 85vw;
-      height: 45%;
-  }
-  .text{
+
+@media only screen and (max-width: 600px) {
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 10px;
+    }
+    
+    .terms {
     display: flex;
-    flex-direction:column;
-    align-content:center;
-    margin: auto;
-      
-  }
-  section{
-      flex-direction:column;
-      justify-content:center;
-  }
-  .para{
-    
-    margin-bottom:20px;
-    padding-top:10px;
-    padding-bottom:10px;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+    margin-right: 20px;
 
 }
- .row{
-    height:300px;
-    width:300px;
-  }
-  .links, #idrow{
-      font-size:4vw;
-  }
-  nav {
-      flex-direction:column;
-  }
-    #idrow{
-        flex-direction:row;
-    }
-  footer{
-    height: 70px;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    
-  }
-}
-@media only screen and (max-width: 750px) {
-  .links, #idrow{
-      font-size:auto;
-      padding:20px 0px;
-      height:20px;
-  }
-  nav {
-      flex-direction:column;
-  }
-    #idrow{
-        flex-direction:row;
-    }
-
-}
-
-
-@media screen and (max-width:480px) {  
-  .row{
-    display: none;
-  }
-    nav {
-      
-      width: 100%
-  }
-  
-    #idrow{
-        flex-direction:row;
-    }
     
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .navbar-brand {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+.pic {
+        padding:10px;
+     }
+}
+
+
