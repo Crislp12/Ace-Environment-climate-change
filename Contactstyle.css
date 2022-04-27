@@ -9,7 +9,12 @@
 *::before *::after {
     box-sizing: border-box;
 }
-
+.navbar-brand {
+  font-size: 60px;
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 50px;
+}
 
 .container-fluid {
   background-color: beige!important;
@@ -27,14 +32,6 @@ body{
 .navbar{
 
     padding: 0 !important;
-}
-
-.navbar-brand {
-  font-size: 40px;
-  display: flex;
-  gap: 1rem;
-  margin-left: 50px;
-
 }
 
 .navbar-nav {
