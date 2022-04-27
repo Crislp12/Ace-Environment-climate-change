@@ -83,15 +83,15 @@ a:hover{
 .fig1 {
   display:flex;
   margin:auto;
-  animation:slidein 5s infinite alternate;
+  animation:slide 5s infinite alternate;
   border:1px solid black;
 }
-
-
-@keyframes slidein {
-    from {margin-left:100%}
-    to{margin-left:0;}
+@keyframes slide {
+    from {margin-left:55%}
+    to{margin-left:0}
 }
+
+
 
 #navbar, li {
     display:flex;
@@ -246,7 +246,9 @@ footer{
 
 
 @media only screen and (max-width:1500px) {
-
+.fig1 {
+    animation:none;
+}
     .navbar-nav{
       font-size: 20px;
       gap:1em;
@@ -302,7 +304,7 @@ footer{
 
 @media only screen and (max-width:705px) {
   .fig1 {
-      width:500px;
+      width:400px;
   }
 
   .out {
