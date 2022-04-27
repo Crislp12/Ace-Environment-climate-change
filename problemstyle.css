@@ -10,16 +10,19 @@
 header {
     position: sticky;
     top:0px;
-}
 
+}
+header .bg-light {
+    background-color: beige !important;
+}
 nav{
     display: flex;
-    background-color:#fefae0;
     height: 100px;
     align-items:center;
     justify-content:space-between;
     z-index: 3;
 }
+
 .container-fluid {
   background-color: beige;
   height: 110px;
@@ -260,7 +263,7 @@ footer{
 @media only screen and (max-width:1150px) {
 
     .navbar-nav{
-      font-size: 10px;
+      font-size: 16px;
       gap:0.5em;
     }
     footer {
@@ -270,6 +273,9 @@ footer{
 
 
 @media only screen and (max-width:991px) {
+    nav {
+        padding:0px 10px;
+    }
      .navbar-collapse{
       background-color: white;
       opacity: 0.8;
@@ -322,9 +328,6 @@ footer{
         font-size:24px;
         text-align:center;
     }
-    nav {
-      flex-direction:column;
-  }
     .sectsol {
         width:100px;
         height:100px;
@@ -336,7 +339,7 @@ footer{
     font-size: 30px!important;
     }
     .navbar-nav {
-  font-size: 20px;
+  font-size: 25px;
     
     }
     .fig1 {
@@ -350,9 +353,6 @@ footer{
         font-size:16px;
         text-align:center;
     }
-    nav {
-      width: 100%
-  }
     #header{
         font-size: 5vw;
         

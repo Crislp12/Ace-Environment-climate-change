@@ -11,13 +11,13 @@
   height: 110px;
 }
 .navbar-brand {
-  font-size: 60px;
+  font-size: 40px !important;
   display: flex;
   gap: 1.5rem;
   margin-left: 50px;
 }
 .navbar-nav {
-  font-size: 25px;
+  font-size: 25px !important;
   display: flex;
   gap: 3rem
 }
@@ -110,22 +110,42 @@ footer{
     background-color:#a4ac86;
     height:50px;
     width:100%;
-
+    padding: 0 20px;
 }
 
-@media only screen and (max-width:1500px) {
-      .navbar-brand{
-      font-size: 18px;
-}
+@media only screen and (max-width:1165px) {
+     
     .navbar-nav{
-      font-size: 12px;
-      gap:1.2em;
+      font-size: 16px !important;
+    }
 }
 
 @media only screen and (max-width: 985px) {
   .navbar-collapse{
   background-color: white;
   opacity: 0.9;
+}
+
+.navbar{
+    padding: 0 !important
+}
+
+
+}
+
+@media only screen and (max-width:995px) {
+    
+    .navbar-brand{
+        font-size: 30px !important;
+    }
+    
+    .navbar-collapse{
+  background-color: white;
+  opacity: 0.9;
+}
+
+    .navbar-nav{
+     font-size: 25px !important;
 }
 }
 
@@ -156,7 +176,10 @@ footer{
 }
 @media screen and (max-width:480px) {  
   footer{
-      flex-direction:column;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+      height: auto;
   }
     nav {
       width: 100%

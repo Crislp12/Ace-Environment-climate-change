@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
    font-family: 'Nanum Myeongjo', serif;
+   cursor:url(leaf.png),auto;
 }
 
 *,
@@ -24,7 +25,7 @@ body{
     background-color: beige !important;
 }
 .navbar{
-    
+
     padding: 0 !important;
 }
 
@@ -41,7 +42,10 @@ body{
   display: flex;
   gap: 2rem
 }
-
+a {
+    color:black !important;
+    text-decoration: none;
+}
 a:hover{
     color: green !important;
 }
@@ -63,7 +67,7 @@ a:hover{
 }
 
 .img{
-   height: 400px;
+   height: 600px;
    background-image: url(https://64.media.tumblr.com/3e4417b1e9ab0f6452c5ccc977212f39/af3550069fb66b8b-07/s540x810/9a9ade0b2cd9ab8157f69ca422bfc136bd994268.gifv);
    background-size: cover;
    display: flex;
@@ -108,7 +112,7 @@ p {
     width: 90%;
     background-color:  white !important;
     border-radius: 70px;
-  
+    border: 5px solid darkgreen;
 }
 
 .text-center {
@@ -129,8 +133,9 @@ p {
     max-width: 100%;
     width:100vw;
     height:500px;
-    border-radius: 50px;
+    border-radius: 30%;
     padding: 0px;
+    border:1px solid green;
 }
    
 
@@ -140,10 +145,9 @@ p {
 
 .footer {
     background-color: #a4ac86;
-    margin: 0 auto;
+    margin:auto;
     display: flex;
     justify-content: space-around;
-    padding: .5rem 0;
 }
 
 .effect{
@@ -187,10 +191,13 @@ p {
 #vid{
     display:flex;
     margin:auto;
-    width: 80vw;
+    width: 70vw;
 }
 
-
+.learn {
+    text-decoration: underline;
+    color:green !important;
+}
 @keyframes slidein {
     from {margin-right:100%}
     to{margin-right:0;}
@@ -211,17 +218,40 @@ p {
     }
     
 
-
 }
+
+
+@media (max-width:1250px) {
+     .container {
+         width:100%;
+         height:50%;
+     }
+     .pic {
+         height:250px;
+         width:400px;
+     }
+}
+
+
 
 @media only screen and (max-width: 985px) {
   .navbar-collapse{
   background-color: white;
   opacity: 0.9;
 }
-  
 }
 
+
+@media (max-width:700px) {
+     .container {
+         width:100%;
+         height:30%;
+     }
+     .pic {
+         height:250px;
+         width:400px;
+     }
+}
 
 @media only screen and (max-width: 600px) {
     
@@ -252,7 +282,9 @@ p {
     font-size: 30px;
     margin-left: 0px;
   }
-
+.pic {
+        padding:10px;
+     }
 }
 
 

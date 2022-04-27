@@ -86,7 +86,7 @@ p {
 }
 
 .container {
-    border: 2px solid black;
+    border: 4px solid green;
     margin: 0 auto;
     width: 90%;
     background-color:  white;
@@ -118,7 +118,7 @@ p {
 
 
 .img{
-   height: 400px;
+   height: 500px;
    background-image: url(https://media4.giphy.com/media/3JTvnMk35PBvxcOPjS/giphy.gif?cid=ecf05e47bjyj4alk7crk6a8qhbxp4w3cp84glyjdqucj0cpp&rid=giphy.gif&ct=g);
    background-size: cover;
    display: flex;
@@ -221,13 +221,34 @@ p {
 
 }
 
-@media only screen and (max-width: 985px) {
+
+@media only screen and (max-width: 1070px) {
+  .navbar-nav {
+  font-size: 15px;
+  
+}
+  
+}
+
+
+@media only screen and (max-width: 990px) {
+  .navbar-nav {
+  font-size: 25px;
+  
+}
+
+
+
+@media only screen and (max-width: 990px) {
   .navbar-collapse{
   background-color: white;
   opacity: 0.9;
 }
   
 }
+
+
+
 
 
 @media only screen and (max-width: 600px) {
@@ -264,3 +285,4 @@ p {
 
 }
 
+}
