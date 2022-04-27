@@ -141,7 +141,7 @@ li:hover {
     font-weight: bolder;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
-@media (max-width:1300px) {
+@media only screen and (max-width:1300px) {
     .textbox {
         width: 600px;
         height: 800px;
@@ -159,9 +159,11 @@ li:hover {
         flex-direction:column;
         align-items:center;
     }
+    footer {
+           bottom:-450px;
+    }
 }
-
-@media (max-width:730px) {
+@media only screen and (max-width:730px) {
     .nav {
     flex-direction:column;
     align-items:center; 
@@ -182,7 +184,7 @@ li:hover {
         margin: auto;
     }
     .pay {
-        width:240px;
+        width:150px;
     }
     input{
         height:4vh;
@@ -192,13 +194,13 @@ li:hover {
         align-items:flex-start;
     }
     footer {
-       bottom:-200px;
+       bottom:-400px;
     }
 }
 
 @media (max-width:520px) {
     footer {
-        bottom:-200px;
+        bottom:-390px;
         padding:0px 15px
     }
     .naver {
@@ -212,7 +214,7 @@ li:hover {
     }
     footer {
         width:400px;
-        bottom:-240px;
+        bottom:-360px;
         padding:0px 25px;
     }
      .naver {
