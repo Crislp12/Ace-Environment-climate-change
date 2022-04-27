@@ -112,7 +112,7 @@ p {
     width: 90%;
     background-color:  white !important;
     border-radius: 70px;
-  
+    border: 5px solid darkgreen;
 }
 
 .text-center {
@@ -135,6 +135,7 @@ p {
     height:500px;
     border-radius: 30%;
     padding: 0px;
+    border:1px solid green;
 }
    
 
@@ -190,10 +191,13 @@ p {
 #vid{
     display:flex;
     margin:auto;
-    width: 50vw;
+    width: 70vw;
 }
 
-
+.learn {
+    text-decoration: underline;
+    color:green !important;
+}
 @keyframes slidein {
     from {margin-right:100%}
     to{margin-right:0;}
